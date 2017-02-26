@@ -5,11 +5,14 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ClickMeComponent } from './click-me.component';
-import { KeyUpComponent_v1 } from './keyup.component';
+import { KeyUpComponent_V1 } from './keyupv1.component';
+import { LoopbackComponent } from './loop-back.component';
+import { KeyUpComponent_V2 } from './keyupv2.component';
+import { KeyUpComponent_V3 } from './keyupv3.component';
 
 @NgModule({
   declarations: [
-    AppComponent, ClickMeComponent, KeyUpComponent_v1
+    AppComponent, ClickMeComponent, KeyUpComponent_V1, LoopbackComponent, KeyUpComponent_V2, KeyUpComponent_V3
   ],
   imports: [
     BrowserModule,
