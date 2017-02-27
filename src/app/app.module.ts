@@ -20,10 +20,17 @@ import { HeroFormComponent } from './8.Forms/hero-form.component'
 
 import { Chapter9Component } from './9.DependenciesInjection/chapter9.component';
 
+import { Engine } from './9.DependenciesInjection/engine';
+import { Tires } from './9.DependenciesInjection/tires';
+import { Car } from './9.DependenciesInjection/car';
+import { MockEngine } from './9.DependenciesInjection/mockengine';
+import { MockTires } from './9.DependenciesInjection/mocktires';
+
 @NgModule({
   declarations: [
     AppComponent, ClickMeComponent, KeyUpComponent_V1, LoopbackComponent, KeyUpComponent_V2, KeyUpComponent_V3,
-    KeyUpComponent_V4, LittleTourComponent, HeroFormComponent, Chapter7Component, Chapter8Component, Chapter9Component
+    KeyUpComponent_V4, LittleTourComponent, HeroFormComponent, Chapter7Component, Chapter8Component,
+    Tires, Engine, Car, MockEngine, MockTires, Chapter9Component
   ],
   imports: [
     BrowserModule,
