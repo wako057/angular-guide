@@ -4,7 +4,7 @@ import {Component} from "@angular/core";
     selector: 'my-loop-back',
     template: `
     <label>my-loopback</label>
-    <input #box (keyup)="0">
+    <input #box (keyup)="0"  class="form-control">
     <p>{{box.value}}</p>
   `
 })

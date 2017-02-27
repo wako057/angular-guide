@@ -5,7 +5,7 @@ import {Component} from "@angular/core";
     <label>my-keyup-v4</label>
     <input #box
       (keyup.enter)="update(box.value)"
-      (blur)="update(box.value)">
+      (blur)="update(box.value)" class="form-control">
 
     <p>{{value}}</p>
   `

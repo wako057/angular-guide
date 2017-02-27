@@ -4,7 +4,7 @@ import {Component} from "@angular/core";
     selector: 'my-keyup-v1',
     template: `
     <label>my-keyup-v1</label>
-  <input (keyup)="onKey($event)">
+  <input (keyup)="onKey($event)" class="form-control">
   <p>{{values}}</p>
 `
 })
