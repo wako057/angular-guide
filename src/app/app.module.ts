@@ -30,7 +30,7 @@ import { MockTires } from './9.DependenciesInjection/mocktires';
   declarations: [
     AppComponent, ClickMeComponent, KeyUpComponent_V1, LoopbackComponent, KeyUpComponent_V2, KeyUpComponent_V3,
     KeyUpComponent_V4, LittleTourComponent, HeroFormComponent, Chapter7Component, Chapter8Component,
-    Tires, Engine, Car, MockEngine, MockTires, Chapter9Component
+    Chapter9Component
   ],
   imports: [
     BrowserModule,
