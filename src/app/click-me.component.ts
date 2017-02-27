@@ -3,6 +3,7 @@ import {Component} from "@angular/core";
 @Component({
     selector: 'click-me',
     template: `
+    <label>Clickme</label>
     <button (click)="onClickMe()">Click me!</button>
     {{clickMessage}}
     `
