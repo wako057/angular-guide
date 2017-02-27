@@ -1,13 +1,13 @@
 
 import {NgModule} from "@angular/core";
 import { RouterModule, Routes } from '@angular/router';
-import { LittleTourComponent } from './7.UserInput/little-tour.component'
-import { HeroFormComponent } from './8.Forms/hero-form.component';
+import { Chapter7Component } from './7.UserInput/chapter7.component'
+import { Chapter8Component } from './8.Forms/chapter8.component';
 
 const routes: Routes = [
     { path: '', redirectTo: '/chapter7', pathMatch: 'full' },
-    { path: 'chapter7',  component: LittleTourComponent},
-    { path: 'chapter8',  component: HeroFormComponent},
+    { path: 'chapter7',  component: Chapter7Component},
+    { path: 'chapter8',  component: Chapter8Component},
 ];
 
 
