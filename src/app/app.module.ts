@@ -19,6 +19,8 @@ import { Chapter8Component } from './8.Forms/chapter8.component';
 import { HeroFormComponent } from './8.Forms/hero-form.component'
 
 import { Chapter9Component } from './9.DependenciesInjection/chapter9.component';
+import { HeroService } from './9.DependenciesInjection/heroes/hero.service';
+import { Logger }             from './logger.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,10 @@ import { Chapter9Component } from './9.DependenciesInjection/chapter9.component'
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    HeroService,
+    Logger
+  ],
   bootstrap: [AppComponent]
 })
 
