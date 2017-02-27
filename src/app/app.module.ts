@@ -19,8 +19,14 @@ import { Chapter8Component } from './8.Forms/chapter8.component';
 import { HeroFormComponent } from './8.Forms/hero-form.component'
 
 import { Chapter9Component } from './9.DependenciesInjection/chapter9.component';
+
 import { HeroService } from './9.DependenciesInjection/heroes/hero.service';
 import { Logger }             from './logger.service';
+
+
+import {HERO_DI_CONFIG} from "./app-config-data";
+import { OpaqueToken } from '@angular/core';
+export let APP_CONFIG = new OpaqueToken('app.config');
 
 @NgModule({
   declarations: [
@@ -36,7 +42,8 @@ import { Logger }             from './logger.service';
   ],
   providers: [
     HeroService,
-    Logger
+    Logger,
+    { provide: APP_CONFIG, useValue: HERO_DI_CONFIG }
   ],
   bootstrap: [AppComponent]
 })
