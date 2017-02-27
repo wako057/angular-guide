@@ -22,7 +22,7 @@ export class Chapter9Component  implements OnInit {
     console.log(this.test);
 
     car = new Car(new MockEngine(), new MockTires());
-    this.test = car.drive();
+    this.test += "\n" + car.drive();
     console.log(this.test);
 
   }
