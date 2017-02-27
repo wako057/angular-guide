@@ -1,5 +1,7 @@
 import {Component, OnInit} from "@angular/core";
 
+import { Engine } from './engine';
+import { Tires } from './tires';
 import { MockEngine } from './mockengine';
 import { MockTires } from './mocktires';
 import { Car } from './car';
@@ -11,12 +13,18 @@ import { Car } from './car';
 
 
 export class Chapter9Component  implements OnInit {
-
+  public test = ''
   constructor() { }
 
   ngOnInit(): void {
-    let car = new Car(new MockEngine(), new MockTires());
-    car.drive();
+    let car = new Car(new Engine(), new Tires());
+    this.test = car.drive();
+    console.log(this.test);
+
+    car = new Car(new MockEngine(), new MockTires());
+    this.test = car.drive();
+    console.log(this.test);
+
   }
 
 
