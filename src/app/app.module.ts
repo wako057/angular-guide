@@ -21,6 +21,7 @@ import { HeroFormComponent } from './8.Forms/hero-form.component'
 import { Chapter9Component } from './9.DependenciesInjection/chapter9.component';
 import { HeroService } from './9.DependenciesInjection/heroes/hero.service';
 import { Logger }             from './logger.service';
+import { EvenBetterLogger }             from './evenbetterlogger.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import { Logger }             from './logger.service';
   ],
   providers: [
     HeroService,
-    Logger
+    Logger,
   ],
   bootstrap: [AppComponent]
 })
