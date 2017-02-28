@@ -1,6 +1,3 @@
-import { AppConfig } from './app-config';
+import {OpaqueToken} from "@angular/core";
 
-export const HERO_DI_CONFIG: AppConfig = {
-    apiEndpoint: 'api.heroes.com',
-    title: 'Dependency Injection'
-};
+export let APP_CONFIG = new OpaqueToken('app.config');

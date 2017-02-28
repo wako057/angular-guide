@@ -1,13 +1,13 @@
-import {Component, OnInit} from "@angular/core";
+import {Component, OnInit, Inject} from "@angular/core";
 
 import { Engine }             from './engine';
 import { Tires }              from './tires';
 import { MockEngine }         from './mockengine';
 import { MockTires }          from './mocktires';
 import { Car }                from './car';
-import { HeroService }        from './heroes/hero.service';
-import { HeroListComponent }  from './heroes/hero-list.component';
 import { Logger }             from '../logger.service';
+import {AppConfig} from "../app-config";
+
 
 @Component({
   selector: 'chapter9',
@@ -17,7 +17,7 @@ import { Logger }             from '../logger.service';
 
 export class Chapter9Component  implements OnInit {
   public test = ''
-  constructor(public logger: Logger) { }
+  constructor(private config:AppConfig, public logger: Logger) { }
 
 
   ngOnInit(): void {
@@ -29,6 +29,8 @@ export class Chapter9Component  implements OnInit {
     car = new Car(new MockEngine(), new MockTires());
     this.test += "\n" + car.drive();
     this.logger.log(this.test);
+
+    this.logger.log(this.config.apiEndpoint + '  ' + this.config.title);
 
     // Implicit injector creation
     // injector = ReflectiveInjector.resolveAndCreate([Car, Engine, Tires]);

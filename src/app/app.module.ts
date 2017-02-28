@@ -24,9 +24,10 @@ import { HeroService } from './9.DependenciesInjection/heroes/hero.service';
 import { Logger }             from './logger.service';
 
 
-import {HERO_DI_CONFIG} from "./app-config-data";
-import { OpaqueToken } from '@angular/core';
-export let APP_CONFIG = new OpaqueToken('app.config');
+import {AppConfig} from "./app-config";
+// import { OpaqueToken } from '@angular/core';
+// import {AppConfig} from "./app-config";
+
 
 @NgModule({
   declarations: [
@@ -43,7 +44,7 @@ export let APP_CONFIG = new OpaqueToken('app.config');
   providers: [
     HeroService,
     Logger,
-    { provide: APP_CONFIG, useValue: HERO_DI_CONFIG }
+    AppConfig
   ],
   bootstrap: [AppComponent]
 })
