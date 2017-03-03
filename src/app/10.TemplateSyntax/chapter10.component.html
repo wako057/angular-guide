@@ -11,3 +11,38 @@
 
 <div *ngFor="let hero of heroes">{{hero.name}}</div>
 <input #heroInput> {{heroInput.value}}
+<br/>
+
+
+    <button (click)="deleteHero()">Delete hero</button>
+
+
+<br/>
+<br/>
+<br/>
+
+    <button (click)="onSave($event)">Save</button>
+<br/>
+    <button *ngFor="let hero of heroes" (click)="deleteHero(hero)">{{hero.name}}</button>
+<br/>
+    <form #heroForm (ngSubmit)="onSubmit(heroForm)"> ... </form>
+
+<!-- Bind button disabled state to `isUnchanged` property -->
+
+<button [disabled]="isUnchanged">Save</button>
+
+<div [ngClass]="classes">[ngClass] binding to the classes property</div>
+
+<p><img src="{{heroImageUrl}}"> is the <i>interpolated</i> image.</p>
+<p><img [src]="heroImageUrl"> is the <i>property bound</i> image.</p>
+
+<p><span>"{{title}}" is the <i>interpolated</i> title.</span></p>
+<p>"<span [innerHTML]="title"></span>" is the <i>property bound</i> title.</p>
+
+<!--
+  Angular generates warnings for these two lines as it sanitizes them
+  WARNING: sanitizing HTML stripped some content (see http://g.co/ng/security#xss).
+ -->
+<p><span>"{{evilTitle}}" is the <i>interpolated</i> evil title.</span></p>
+<p>"<span [innerHTML]="evilTitle"></span>" is the <i>property bound</i> evil title.</p>
+
