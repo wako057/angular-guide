@@ -1,0 +1,13 @@
+
+
+
+<h1>Hello Angular</h1>
+
+<!-- "The sum of 1 + 1 is 2" -->
+<p>The sum of 1 + 1 is {{1 + 1}}</p>
+
+{{title}}
+<span [hidden]="isUnchanged">changed</span>
+
+<div *ngFor="let hero of heroes">{{hero.name}}</div>
+<input #heroInput> {{heroInput.value}}

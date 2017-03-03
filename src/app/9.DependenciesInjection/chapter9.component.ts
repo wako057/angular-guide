@@ -44,17 +44,6 @@ export class Chapter9Component  implements OnInit {
     this.logger.log(this.test);
 
 
-    // Implicit injector creation
-    // injector = ReflectiveInjector.resolveAndCreate([Car, Engine, Tires]);
-    // let car = injector.get(Car);
-
-    // let expectedHeroes = [{name: 'A'}, {name: 'B'}]
-    // let mockService = <HeroService> {getHeroes: () => expectedHeroes }
-    //
-    // it('should have heroes when HeroListComponent created', () => {
-    //   let hlc = new HeroListComponent(mockService);
-    //   expect(hlc.heroes.length).toEqual(expectedHeroes.length);
-    // });
   }
 
 

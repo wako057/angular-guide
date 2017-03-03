@@ -23,12 +23,14 @@ import { HeroListComponent } from './9.DependenciesInjection/hero-list.component
 import {HERO_DI_CONFIG} from "./app-config";
 import {APP_CONFIG} from "./app-config-data";
 
+import { Chapter10Component } from './10.TemplateSyntax/chapter10.component';
+
 
 @NgModule({
   declarations: [
     AppComponent, ClickMeComponent, KeyUpComponent_V1, LoopbackComponent, KeyUpComponent_V2, KeyUpComponent_V3,
     KeyUpComponent_V4, LittleTourComponent, HeroFormComponent, Chapter7Component, Chapter8Component,
-    Chapter9Component, HeroListComponent
+    Chapter9Component, HeroListComponent, Chapter10Component
   ],
   imports: [
     BrowserModule,
