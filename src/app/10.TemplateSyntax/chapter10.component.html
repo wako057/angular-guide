@@ -67,3 +67,6 @@
 <div class="special"
      [class.special]="!isSpecial">This one is not so special</div>
 
+<button on-click="onSave()">On Save</button>
+<input [value]="currentHero.name"
+       (input)="currentHero.name=$event.target.value" >
