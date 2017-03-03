@@ -38,6 +38,7 @@ export class Chapter9Component  implements OnInit {
     this.test += "\n" + car.drive();
     this.logger.log(this.test);
 
+    this.test += '\n\napiEndpoint: ' + this.config.apiEndpoint + '  title: ' + this.title + '\n';
     this.logger.log('apiEndpoint: ' + this.config.apiEndpoint + '  title: ' + this.title);
     this.test += "\n" + car.drive();
     this.logger.log(this.test);
