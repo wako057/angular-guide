@@ -1,12 +1,13 @@
 
-import {Component, Inject} from "@angular/core";
+import {Component, Inject, style} from "@angular/core";
 import {APP_CONFIG} from "../app-config-data";
 import {AppConfig} from "../app-config-interface";
 import {Logger} from "../logger.service";
 import {HeroService} from "../9.DependenciesInjection/hero.service";
 @Component({
     selector: 'chapter10',
-    templateUrl: './chapter10.component.html'
+    templateUrl: './chapter10.component.html',
+    styles: [ '.special{color:red;}' ]
 })
 
 

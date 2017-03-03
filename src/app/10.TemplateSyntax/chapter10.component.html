@@ -60,4 +60,10 @@
 <!-- create and set an aria attribute for assistive technology -->
 <button [attr.aria-label]="actionName">{{actionName}} with Aria</button>
 
+<!-- toggle the "special" class on/off with a property -->
+<div class="special" [class.special]="isSpecial">The class binding is special</div>
+
+<!-- binding to `class.special` trumps the class attribute -->
+<div class="special"
+     [class.special]="!isSpecial">This one is not so special</div>
 
