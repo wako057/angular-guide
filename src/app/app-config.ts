@@ -1,8 +1,8 @@
 
-import {Injectable} from "@angular/core";
 
-@Injectable()
-export class AppConfig {
-    apiEndpoint: 'api.heroes.com';
-    title: 'Dependency Injection';
-}
+import { AppConfig } from './app-config-interface';
+
+export const HERO_DI_CONFIG: AppConfig = {
+    apiEndpoint: 'api.heroes.com',
+    title: 'Dependency Injection'
+};
