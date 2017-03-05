@@ -32,4 +32,22 @@
     <div [style.font-size]="isSpecial ? 'x-large' : 'smaller'" >
         This div is x-large.
     </div>
+
+
+    <hr><h2 id="ngStyle">Template expression operator</h2>
+    <div>
+        Title through a pipe chain:
+        {{title | uppercase | lowercase}}
+    </div>
+    <!-- pipe with configuration argument => "February 25, 1970" -->
+    <div>Birthdate: {{currentHero?.birthdate | date:'longDate'}}</div>
+    <div>{{currentHero | json}}</div>
+    The current hero's name is {{currentHero?.name}}
+    The title is {{title}}
+        <!--No hero, div not displayed, no error -->
+    <div *ngIf="nullHero">The null hero's name is {{nullHero.name}}</div>
+    <div>The null hero's name is {{nullHero && nullHero.name}}</div>
+    <!-- No hero, no problem! -->
+    <div>The null hero's name is {{nullHero?.name}}</div>
+
 </div>
