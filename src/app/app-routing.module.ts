@@ -5,13 +5,14 @@ import { Chapter7Component }    from './7.UserInput/chapter7.component'
 import { Chapter8Component }    from './8.Forms/chapter8.component';
 import { Chapter9Component }    from './9.DependenciesInjection/chapter9.component';
 import { Chapter10Component }   from './10.TemplateSyntax/chapter10.component';
-
+import { Chapter102Component }   from './10.TemplateSyntax/Chapter10-2.component';
 const routes: Routes = [
     { path: '', redirectTo: '/chapter7', pathMatch: 'full' },
     { path: 'chapter7',  component: Chapter7Component},
     { path: 'chapter8',  component: Chapter8Component},
     { path: 'chapter9',  component: Chapter9Component},
     { path: 'chapter10',  component: Chapter10Component},
+    { path: 'chapter102',  component: Chapter102Component},
 ];
 
 

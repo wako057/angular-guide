@@ -1,0 +1,9 @@
+blu
+
+
+<button (click)="onSave()">Save</button>
+<my-sizer [size]="fontSizePx" (sizeChange)="fontSizePx=$event"></my-sizer>
+
+
+<my-sizer [(size)]="fontSizePx"></my-sizer>
+<div [style.font-size.px]="fontSizePx">Resizable Text</div>
