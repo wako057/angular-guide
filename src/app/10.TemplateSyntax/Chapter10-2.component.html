@@ -7,4 +7,29 @@
     <!-- Les deux syntaxe sont equivalentes, mais pour detaille je garde tout -->
     <my-sizer [(size)]="fontSizePx"></my-sizer>
     <div [style.font-size.px]="fontSizePx">Resizable Text</div>
+
+
+    <!-- NgClass binding -->
+    <hr><h2 id="ngClass">NgClass Binding</h2>
+
+    <p>currentClasses returns {{currentClasses | json}}</p>
+    <div [ngClass]="currentClasses">This div is initially saveable, unchanged, and special</div>
+
+    <!-- NgStyle binding -->
+    <hr><h2 id="ngStyle">NgStyle Binding</h2>
+
+    <div [style.font-size]="isSpecial ? 'x-large' : 'smaller'" >
+        This div is x-large.
+    </div>
+
+    <h3>[ngStyle] binding to `currentStyles` - CSS property names</h3>
+    <p>currentStyles returns {{currentStyles | json}}</p>
+    <div [ngStyle]="currentStyles">
+        This div is initially italic, normal weight, and extra large (24px).
+    </div>
+
+
+    <div [style.font-size]="isSpecial ? 'x-large' : 'smaller'" >
+        This div is x-large.
+    </div>
 </div>
