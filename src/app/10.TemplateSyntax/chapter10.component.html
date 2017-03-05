@@ -4,6 +4,7 @@
 <h1>Hello Angular</h1>
 
 <!-- "The sum of 1 + 1 is 2" -->
+<div class="container">
 <p>The sum of 1 + 1 is {{1 + 1}}</p>
 
 {{title}}
@@ -70,3 +71,4 @@
 <button on-click="onSave()">On Save</button>
 <input [value]="currentHero.name"
        (input)="currentHero.name=$event.target.value" >
+</div>

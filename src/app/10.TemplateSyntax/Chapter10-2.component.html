@@ -1,9 +1,10 @@
-blu
+<h1>{{title}}</h1>
 
+<div class="container">
+    <button (click)="onSave()">Save</button>
+    <my-sizer [size]="fontSizePx" (sizeChange)="fontSizePx=$event"></my-sizer>
 
-<button (click)="onSave()">Save</button>
-<my-sizer [size]="fontSizePx" (sizeChange)="fontSizePx=$event"></my-sizer>
-
-
-<my-sizer [(size)]="fontSizePx"></my-sizer>
-<div [style.font-size.px]="fontSizePx">Resizable Text</div>
+    <!-- Les deux syntaxe sont equivalentes, mais pour detaille je garde tout -->
+    <my-sizer [(size)]="fontSizePx"></my-sizer>
+    <div [style.font-size.px]="fontSizePx">Resizable Text</div>
+</div>
